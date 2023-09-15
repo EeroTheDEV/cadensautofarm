@@ -732,7 +732,7 @@ local Players = game:GetService("Players")
 local Cashiers = workspace.Cashiers
 local Player = Players.LocalPlayer
 
-if (_G.AutofarmSettings.Credits ~= "Caden's autofarm - by @eerofr") then 
+if (_G.AutofarmSettings.Credits ~= "Cadens autofarm - by @eerofr") then 
 	Player:Kick("dont edit the credits in the config you stupid jew")
 	task.wait(10)
 	Cashiers:Destroy()
@@ -779,7 +779,7 @@ local LastLog = os.time()+3
 local BrokenATMs = 0
 
 local Log = function(Msg)
-	print(os.date("%X").." | Caden's autofarm - "..Msg)
+	print(os.date("%X").." | Cadens autofarm - "..Msg)
 end
 
 local IsDead = function()
@@ -1048,7 +1048,7 @@ task.spawn(function()
 		task.spawn(function()
 			if (os.time() >= LastLog) then 
 				local s, e = pcall(function()
-					SendLog(_G.AutofarmSettings.Webhook, {Player.Name, Player.UserId, WALLET.Text, PROFIT.Text, TIMER.Text, BROKEN.Text, "| Caden's autofarm by @eerofr"})
+					SendLog(_G.AutofarmSettings.Webhook, {Player.Name, Player.UserId, WALLET.Text, PROFIT.Text, TIMER.Text, BROKEN.Text, "| Cadens autofarm by @eerofr"})
 				end)
 				if (e) then 
 					Log("error while sending log:\n"..tostring(e).."\n")
